@@ -57,9 +57,12 @@ else
 Console.WriteLine("Дорогой пользователь, введи N:");
 int num = Convert.ToInt32(Console.ReadLine ());
 
-int current = num / num ;
+int current = num / num +1;
+
 while (current <= num) 
 {
-    Console.Write (current + " ");
-current++;
-}
+ if ( current % 2 == 0)
+    Console.Write (current + "  ");
+
+ current++;
+} 
